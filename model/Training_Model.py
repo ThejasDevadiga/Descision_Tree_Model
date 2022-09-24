@@ -51,10 +51,9 @@ class training_Model():
         for index in range(len(dataset[0])-1):
             for row in dataset:
                 groups = self.test_split(index, row[index], dataset)
-                gini = self.gini_index(groups,class_values)
-	    	      
+                gini = self.gini_index(groups,class_values)    
                 if gini < b_score:
-        	         b_index, b_value, b_score, b_groups = index, row[index], gini, groups
+                    b_index, b_value, b_score, b_groups = index, row[index], gini, groups
         return {'index':b_index, 'value':b_value, 'groups':b_groups}
    
     def test_split(self,index, value, dataset):

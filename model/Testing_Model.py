@@ -11,14 +11,14 @@ class testing_model():
                 self.accuracy += 1
         self.accuracy = (self.accuracy/len(self.test_data))*100
     def predictor(self, node , row):
-	    if row[node['index']] < node['value']:
-	    	if isinstance(node['left'], dict):
-	    		return self.predictor(node['left'], row)
-	    	else:
-	    		return node['left']
-	    else:
-	    	if isinstance(node['right'], dict):
-	    		return self.predictor(node['right'], row)
-	    	else:
-	    		return node['right']      
+        if row[node['index']] < node['value']:
+            if isinstance(node['left'], dict):
+                return self.predictor(node['left'], row)
+            else:
+                return node['left']
+        else:
+            if isinstance(node['right'], dict):
+                return self.predictor(node['right'], row)
+            else:
+                return node['right']      
     
