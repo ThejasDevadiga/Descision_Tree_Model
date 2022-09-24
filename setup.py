@@ -6,7 +6,7 @@ setup(name='obesity',
       version='1.0',
       description='Python',
       author='Thejas Devadiga',
-      author_email='mrdevaidgatj@gmail.com,
+      author_email='mrdevaidgatj@gmail.com',
       url='.........',
       packages=['matplotlib', 'numpy','pandas'],
      )
