@@ -8,5 +8,5 @@ setup(name='obesity',
       author='Thejas Devadiga',
       author_email='mrdevaidgatj@gmail.com',
       url='.........',
-      packages=['matplotlib', 'numpy','pandas'],
+      
      )
